@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin: 0;
+    /*BOX_MODEL: https://media.geeksforgeeks.org/wp-content/uploads/cssmarginandpadding.png */
+    display: flex;
+    /*DISPLAY: https://i0.wp.com/www.tutorialbrain.com/wp-content/uploads/2019/06/CSS-Display.png?fit=474%2C379&ssl=1 */
+    justify-content: center;
+    align-items: center;
+    /*JUSTIFY-ITEMS v/s JUSTIFY-CONTENT v/s ALIGN-CONTENT: https://pbs.twimg.com/media/E0OWyghUYAQeZiR.jpg*/
+    min-height: 100vh; 
+    /*CSS UNITS FOR LENGTH: https://www.w3schools.com/cssref/css_units.asp */
+    /*https://youtu.be/IWFqGsXxJ1E*/ 
+    /*Note to self: the difference between vw (or vh) and percentages is that vw and vh are relative to the viewport whereas percentages are relative to the parent element.*/
+    background: #ecf0f3;
+    
+}
+
+.container{
+    width: 45%;
+    height: 45vh;
+    padding : 10px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 20px #cbced1,
+                -12px -12px 20px #ffffff;
+/*https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+}
+
+.display #screen{
+    width: 97%;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    /*https://youtu.be/xx_pJ2ouGnc*/
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+}
+
+.btns{
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns .row button{
+    width: 80px;
+    height: 37px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px #00000020,
+                -5px -5px 8px #ffffff;
+                transition: .1s;
+}
+
+.btns .row button:hover{
+    box-shadow: inset 5px 5px 8px rgba(16,16,16,.1),
+                inset -5px -5px 8px #fff;
+    background: #ffffff;
+}
+
+#eval{
+    background: #3fdf31;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #77e46d,
+                inset -5px -5px 8px #37c22a;
+}
+
+#eval:hover{
+    box-shadow: inset 5px 5px 8px #2b9621,
+                inset -5px -5px 8px #37c22a;
+}
+#ac{
+    background: #41c0f3;
+    color: #fff;
+    
+}
+
+#ac:hover{
+    box-shadow: inset 5px 5px 8px #318baf,
+                inset -5px -5px 8px #41c0f3;
+}
+#ce{
+    background: #dd3131;
+    color: #fff;
+}
+
+#ce:hover{
+    box-shadow: inset 5px 5px 8px #bb0303,
+                inset -5px -5px 8px #dd3131;
+}
